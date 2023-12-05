@@ -28,18 +28,7 @@ With this data set and the ggmap package, I sought to answer the following quest
 
 ```{r setup, message=FALSE, warning=FALSE}
 library(ggmap)
-```
-
-```{r, message=FALSE, warning=FALSE}
-library(dplyr)
-library(ggplot2)
-library(forcats)
-library(purrr)
-library(readr)
-library(tidyr)
-library(tibble)
-library(lubridate)
-library("here")
+library(here)
 ```
 
 ```{r,message=FALSE, warning=FALSE, output = FALSE}
@@ -90,7 +79,7 @@ ggmap::ggmap(US_map) +
 
 ## Frequency of Tornadoes 1950 vs. 2022
 
-```{r fig.height=6, fig.width=8}
+```{r fig.height=6, fig.width=8, eval=FALSE}
 tornadoes %>%
   filter(year(date) %in% c(1950,2022)) %>%
   group_by(yr,st) %>%

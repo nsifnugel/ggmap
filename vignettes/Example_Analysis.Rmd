@@ -31,7 +31,14 @@ library(ggmap)
 ```
 
 ```{r, message=FALSE, warning=FALSE}
-library("tidyverse")
+library(dplyr)
+library(ggplot2)
+library(forcats)
+library(purrr)
+library(readr)
+library(tidyr)
+library(tibble)
+library(lubridate)
 library("here")
 ```
 

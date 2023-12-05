@@ -31,7 +31,7 @@ With this data set and the ggmap package, I sought to answer the following quest
 library(ggmap)
 ```
 
-```{r}
+```{r, message=FALSE, warning=FALSE}
 library(tidyverse)
 library(here)
 ```
@@ -156,3 +156,7 @@ Overall, this analysis revealed that there were more tornadoes in the US in 2022
 -   **dplyr**: group_by(), summarize(), filter(), select(), rename(), slice(), nest(), mutate()
 -   **ggplot**: geom_point(), geom_bar(), geom_smooth()
 -   **purr**: map(), map2()
+
+```{r}
+warnings()
+```

@@ -12,7 +12,7 @@
 
 ## Important Information before Getting Started
 
-###### appended to original README.md by Natalia Sifnugel (Website Creator)
+##### appended to original README.md by Natalia Sifnugel (Website Creator)
 
 Link to Original GitHub Repository for Package: <https://github.com/dkahle/ggmap>
 

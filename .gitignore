@@ -3,3 +3,5 @@
 .RData
 README_cache/
 /revdep/.cache.rds
+inst/doc
+docs

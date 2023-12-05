@@ -1,5 +1,5 @@
 ---
-title: "Example_Analysis"
+title: "Example Analysis"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{Example_Analysis}
@@ -31,8 +31,8 @@ library(ggmap)
 ```
 
 ```{r, message=FALSE, warning=FALSE}
-library(tidyverse)
-library(here)
+library("tidyverse")
+library("here")
 ```
 
 ```{r,message=FALSE, warning=FALSE, output = FALSE}

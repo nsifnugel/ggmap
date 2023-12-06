@@ -12,11 +12,11 @@
 
 ## Important Information before Getting Started
 
-#### appended to original README.md by Natalia Sifnugel (Website Creator)
+This website was created by Natalia Sifnugel for JHSPH Biostat777 Project 3.
 
 Link to Original GitHub Repository for Package: <https://github.com/dkahle/ggmap>
 
-Link to Deployed Website: \<\>
+Link to Deployed Website: <https://jhu-statprogramming-fall-2023.github.io/biostat777-project3-part1-nsifnugel/index.html>
 
 Customized Website Elements:
 
@@ -36,6 +36,9 @@ Original Package Author(s)
 -   Hadley Wickham [aut]
 -   Scott Jackson [aut]
 -   Mikko Korpela [ctb]
+-   Natalia Sifnugel [website]
+
+There are many functions included in this package, they can be found under the references tab of the site!
 
 ## Goal
 

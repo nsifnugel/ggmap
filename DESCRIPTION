@@ -5,7 +5,7 @@ Description: A collection of functions to visualize spatial data and models
     on top of static maps from various online sources (e.g Google Maps and Stamen
     Maps). It includes tools common to those tasks, including functions for
     geolocation and routing.
-URL: https://github.com/dkahle/ggmap, https://jhu-statprogramming-fall-2023.github.io/biostat777-project3-part1-nsifnugel/
+URL: https://github.com/jhu-statprogramming-fall-2023/biostat777-project3-part1-nsifnugel
 BugReports: https://github.com/dkahle/ggmap/issues
 Authors@R: c(person("David", "Kahle", email = "david@kahle.io", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-9999-1558")),
   person("Hadley", "Wickham", email = "h.wickham@gmail.com", role = "aut", comment = c(ORCID = "0000-0003-4757-117X")),
@@ -31,7 +31,9 @@ Imports:
     tibble,
     tidyr,
     rlang,
-    cli
+    cli,
+    here,
+    tidyverse
 Suggests:
     MASS,
     hexbin,

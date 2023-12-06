@@ -21,10 +21,14 @@ Link to Deployed Website: \<\>
 Customized Website Elements:
 
 -   
+
 -   
+
 -   
+
 -   
--
+
+-   
 
 Original Package Author(s)
 

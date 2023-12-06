@@ -29,17 +29,18 @@ With this data set and the ggmap package, I sought to answer the following quest
 ```{r setup, message=FALSE, warning=FALSE}
 library(ggmap)
 library(here)
+library(tidyverse)
 ```
 
 ```{r,message=FALSE, warning=FALSE, output = FALSE}
 
-if (!dir.exists(here("~/Desktop/data"))) {
-  dir.create(here("~/Desktop/data"))
+if (!dir.exists(here("data"))) {
+  dir.create(here("data"))
 }
-if (any(!file.exists(here("~/Desktop/data", "tornadoes.RDS")))) {
+if (any(!file.exists(here("data", "tornadoes.RDS")))) {
   tornadoes <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-05-16/tornados.csv')
-  saveRDS(tornadoes, file = here("~/Desktop/data","tornadoes.RDS"))
-} else {tornadoes <- readRDS(here("~/Desktop/data","tornadoes.RDS"))
+  saveRDS(tornadoes, file = here("data","tornadoes.RDS"))
+} else {tornadoes <- readRDS(here("data","tornadoes.RDS"))
 }
 ```
 
@@ -79,7 +80,7 @@ ggmap::ggmap(US_map) +
 
 ## Frequency of Tornadoes 1950 vs. 2022
 
-```{r fig.height=6, fig.width=8, eval=FALSE}
+```{r fig.height=6, fig.width=8}
 tornadoes %>%
   filter(year(date) %in% c(1950,2022)) %>%
   group_by(yr,st) %>%

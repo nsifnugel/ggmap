@@ -10,7 +10,7 @@
 
 # ggmap
 
-## Important Information before Getting Started
+## Important Information
 
 This website was created by Natalia Sifnugel for JHSPH Biostat777 Project 3.
 
@@ -20,15 +20,11 @@ Link to Deployed Website: <https://jhu-statprogramming-fall-2023.github.io/biost
 
 Customized Website Elements:
 
--   
-
--   
-
--   
-
--   
-
--   
+-   Bootswatch Theme\
+-   Restructured Sidebar
+-   Restructured Footer
+-   Changed Fonts for Header, Base, and Code Text
+-   Customized Navbar Color
 
 Original Package Author(s)
 
@@ -38,7 +34,7 @@ Original Package Author(s)
 -   Mikko Korpela [ctb]
 -   Natalia Sifnugel [website]
 
-There are many functions included in this package, they can be found under the references tab of the site!
+There are many functions included in this package, they can be found under the reference tab of the site!
 
 ## Goal
 

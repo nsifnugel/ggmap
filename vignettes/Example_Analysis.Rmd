@@ -151,5 +151,5 @@ Overall, this analysis revealed that there were more tornadoes in the US in 2022
 -   **ggmap**: register_google(), get_map(), ggmap(), mapdist()
 -   **dplyr**: group_by(), summarize(), filter(), select(), rename(), slice(), nest(), mutate()
 -   **ggplot**: geom_point(), geom_bar(), geom_smooth()
--   **purr**: map(), map2()
+-   **purrr**: map(), map2()
 

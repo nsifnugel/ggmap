@@ -1,4 +1,18 @@
 url: https://jhu-statprogramming-fall-2023.github.io/biostat777-project3-part1-nsifnugel/
 template:
   bootstrap: 5
-
+  bootswatch: sandstone
+  bslib:
+    base_font: {google: "Open Sans"}
+    heading_font: {google: "Courier Prime"}
+    code_font: {google: "Courier Prime"}
+    primary: "#5C75DD"
+footer:
+  structure:
+    left: name
+    right: built_with
+  components:
+    name: "Website Developed by Natalia Sifnugel"
+home:
+  sidebar:
+    structure: [dev,authors,license,citation,links]

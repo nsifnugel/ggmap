@@ -88,7 +88,7 @@ qmplot(lon, lat, data = violent_crimes, maptype = "stamen_toner_lite", color = I
 #  ℹ © Stadia Maps © Stamen Design © OpenMapTiles © OpenStreetMap contributors.
 ```
 
-![](vignettes/tools/README-qmplot-1.png)
+![](tools/README-qmplot-1.png)
 
 Often `qmplot()` is easiest because it automatically computes a nice bounding box for you without having to pre-compute it for yourself, get a map, and then use `ggmap(map)` in place of where you would ordinarily (in a **ggplot2** formulation) use `ggplot()`. Nevertheless, doing it yourself is more efficient. In that workflow you get the map first (and you can visualize it with `ggmap()`):
 
@@ -99,7 +99,7 @@ map <- get_stadiamap( bbox = bbox, maptype = "stamen_toner_lite", zoom = 14 )
 ggmap(map)
 ```
 
-![](vignettes/tools/README-ggmap-1.png)
+![](tools/README-ggmap-1.png)
 
 And then you layer on geoms/stats as you would with **ggplot2**. The only difference is that (1) you need to specify the `data` arguments in the layers and (2) the spatial aesthetics `x` and `y` are set to `lon` and `lat`, respectively. (If they're named something different in your dataset, just put `mapping = aes(x = longitude, y = latitude))`, for example.)
 
@@ -108,7 +108,7 @@ ggmap(map) +
   geom_point(data = violent_crimes, color = "red")
 ```
 
-![](vignettes/tools/README-ggmap-layers-1.png)
+![](tools/README-ggmap-layers-1.png)
 
 With **ggmap** you're working with **ggplot2**, so you can add in other kinds of layers, use [**patchwork**](https://patchwork.data-imaginist.com), etc. All the **ggplot2** geom's are available. For example, you can make a contour plot with `geom = "density2d"`:
 
@@ -137,7 +137,7 @@ hdr_map <- ggmap(map) +
   theme(axis.title = element_blank(), axis.text = element_blank(), axis.ticks = element_blank())
 ```
 
-![](vignettes/tools/README-ggmap-patchwork-1.png)
+![](tools/README-ggmap-patchwork-1.png)
 
 Faceting works, too:
 
@@ -151,7 +151,7 @@ ggmap(map, darken = .3) +
   theme(axis.title = element_blank(), axis.text = element_blank(), axis.ticks = element_blank())
 ```
 
-![](vignettes/tools/README-faceting-1.png)
+![](tools/README-faceting-1.png)
 
 ## Google Maps
 
@@ -165,7 +165,7 @@ ggmap(map, darken = .3) +
 ggmap(map)
 ```
 
-![](vignettes/tools/README-google_maps-1.png)
+![](tools/README-google_maps-1.png)
 
 Moreover, you can get various different styles of Google Maps with **ggmap** (just like Stadia Maps):
 
@@ -236,7 +236,7 @@ qmap("college station, texas", zoom = 8) +
 #  generated.
 ```
 
-![](vignettes/tools/README-route_trek-1.png)
+![](tools/README-route_trek-1.png)
 
 (They also provide information on how long it takes to get from point A to point B.)
 

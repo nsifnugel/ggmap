@@ -59,7 +59,7 @@ get_stadiamap(us, zoom = 5, maptype = "alidade_smooth") |> ggmap()
 #  ℹ © Stadia Maps © Stamen Design © OpenMapTiles © OpenStreetMap contributors.
 ```
 
-![](vignettes/tools/README-maptypes-1.png)
+![](tools/README-maptypes-1.png)
 
 Use `qmplot()` in the same way you'd use `qplot()`, but with a map automatically added in the background:
 

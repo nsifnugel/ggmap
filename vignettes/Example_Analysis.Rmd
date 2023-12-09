@@ -34,13 +34,13 @@ library(tidyverse)
 
 ```{r,message=FALSE, warning=FALSE, output = FALSE}
 
-if (!dir.exists(here("data"))) {
-  dir.create(here("data"))
+if (!dir.exists(here("~/Desktop/data"))) {
+  dir.create(here("~/Desktop/data"))
 }
-if (any(!file.exists(here("data", "tornadoes.RDS")))) {
+if (any(!file.exists(here("~/Desktop/data", "tornadoes.RDS")))) {
   tornadoes <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-05-16/tornados.csv')
-  saveRDS(tornadoes, file = here("data","tornadoes.RDS"))
-} else {tornadoes <- readRDS(here("data","tornadoes.RDS"))
+  saveRDS(tornadoes, file = here("~/Desktop/data","tornadoes.RDS"))
+} else {tornadoes <- readRDS(here("~/Desktop/data","tornadoes.RDS"))
 }
 ```
 
